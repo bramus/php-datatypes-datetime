@@ -1,0 +1,32 @@
+{
+    "name": "bramus/datetime",
+    "description": "Extensions to PHP's built-in `DateTime` and `DateTimeZone` classes",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bramus",
+            "email": "bramus@bram.us"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "bramus/datatypes": "1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bramus\\DateTime\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\Bramus\\DateTime\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit --colors=always"
+    }
+}
